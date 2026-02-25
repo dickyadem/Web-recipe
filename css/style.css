@@ -16,7 +16,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--light-gray);
-    padding-top: 76px; /* Offset for fixed navbar */
+    padding-top: 80px; /* Offset for fixed navbar */
     font-weight: 300;
     line-height: 1.7;
     letter-spacing: 0.3px;
@@ -45,6 +45,7 @@ p {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     padding: 1rem 0;
     transition: all 0.3s ease;
+    z-index: 1000;
 }
 
 .navbar.scrolled {

@@ -10,7 +10,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
@@ -18,22 +20,35 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">Ala Dapoer Adem</a>
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-utensils me-2"></i>Ala Dapoer Adem
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="../index.html">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html">About Us</a>
+                        <a class="nav-link" href="aboutus.html">
+                            <i class="fas fa-user me-1"></i>About Us
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
+                        <a class="nav-link active" href="contact.html">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="contact.html" class="btn btn-light rounded-pill px-4">
+                            <i class="fas fa-paper-plane me-1"></i>Hubungi Kami
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -130,13 +145,12 @@
             </div>
         </div>
 
-        <!-- Map Section (Optional) -->
+        <!-- Map Section -->
         <div class="row mt-5">
             <div class="col-12 fade-in">
                 <div class="contact-info">
                     <h3 class="brand-font mb-3" style="color: #e67300; font-size: 2rem;">Lokasi</h3>
                     <p><i class="fas fa-map-marker-alt"></i> Kabupaten Bekasi, Jawa Barat, Indonesia</p>
-                    <!-- Embedded Google Map Placeholder -->
                     <div class="ratio ratio-16x9 mt-3">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.26149919596!2d106.9730!3d-6.2441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698cb6d65957b1%3A0x3f9c2f5e5e5e5e5e!2sBekasi%2C%20Bekasi%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1234567890"
@@ -149,7 +163,34 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p class="mb-0">&copy; Copyright <strong>Dicky</strong>. All Rights Reserved</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-title"><i class="fas fa-utensils me-2"></i>Ala Dapoer Adem</h4>
+                    <p>Temukan resep masakan tradisional dan rumahan yang praktis, mudah, dan lezat untuk keluarga tercinta.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-title"><i class="fas fa-link me-2"></i>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html"><i class="fas fa-chevron-right me-2"></i>Home</a></li>
+                        <li><a href="aboutus.html"><i class="fas fa-chevron-right me-2"></i>About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right me-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-title"><i class="fas fa-envelope me-2"></i>Kontak</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope me-2"></i>Dickyadem@gmail.com</li>
+                        <li><i class="fab fa-whatsapp me-2"></i>0812-3456-7890</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Kabupaten Bekasi</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Copyright <strong>Dicky Ade Mahendra</strong>. All Rights Reserved</p>
+            </div>
+        </div>
     </footer>
 
     <!-- Scroll to Top Button -->
@@ -175,13 +216,11 @@
                 message: formData.get('message')
             };
 
-            // Validate
             if (!data.name || !data.email || !data.subject || !data.message) {
                 showAlert('Mohon isi semua field!', 'warning');
                 return;
             }
 
-            // Simulate form submission
             console.log('Contact form submitted:', data);
             showAlert('Pesan Anda telah dikirim! Terima kasih telah menghubungi.', 'success');
             this.reset();

@@ -2,177 +2,376 @@
 <html lang="en">
 
 <head>
-	<title>HomePage</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width-device-width,initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Euphoria Script' rel='stylesheet'>
-	<script src="js/jquery-3.5.1.js"></script>
+    <title>Ala Dapoer Adem - Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-	<header>
-		<div class="header">
-			<h1> Ala Dapoer Adem</h1>
-			<h5>Semua Bisa Dibuat Bersama Dapoer Adem</h5>
-		</div>
-	</header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-utensils me-2"></i>Ala Dapoer Adem
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/aboutus.html">
+                            <i class="fas fa-user me-1"></i>About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/contact.html">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="html/contact.html" class="btn btn-light rounded-pill px-4">
+                            <i class="fas fa-paper-plane me-1"></i>Hubungi Kami
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<nav>
-		<div class="nav">
-			<a href="index.html"> Home</a>
-			&nbsp;
-			<a href="html/aboutus.html"> About us</a>
-			&nbsp;
-			<a href="html/contact.html"> Contact</a>
-		</div>
-	</nav>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <h1 class="display-3 fw-bold mb-3">Selamat Datang di<br><span class="brand-highlight">Ala Dapoer Adem</span></h1>
+                    <p class="lead mb-4">Temukan resep masakan tradisional dan rumahan yang praktis, mudah, dan lezat untuk keluarga tercinta</p>
+                    <div class="hero-buttons">
+                        <a href="#recipes" class="btn btn-primary btn-lg rounded-pill px-4 me-2">
+                            <i class="fas fa-book-open me-2"></i>Lihat Resep
+                        </a>
+                        <a href="html/aboutus.html" class="btn btn-outline-light btn-lg rounded-pill px-4">
+                            <i class="fas fa-info-circle me-2"></i>Tentang Kami
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-container fade-in">
+                    <img src="assets/img/template.jpg" alt="Welcome Banner" class="hero-image">
+                </div>
+            </div>
+        </section>
 
-	<main>
-		<section class="wellcome">
-			<img class="gambar" src="assets/img/template.jpg" alt="template" width="100%" height="200">
-			<div class="center">
-				<strong>WELCOME</strong>
-			</div>
-		</section>
-		<section class="row">
-			<div class="leftcolumn">
-				<article>
-					<div class="card">
-						<h2 class="a"><strong> Masakan Tradisional</strong></h2>
-						<br>
-						<p>  Makanan Tradisional ialah makanan asli atau khas daerah tertentu di Indonesia dimana dalam
-							proses
-							pengolahannya sangat dikuasai oleh masyarakat di daerah tersebut, serta cita rasanya sangat
-							sesuai
-							dengan masyarakat setempat. Karena proses pengolahan serta cita rasanya sangat identik
-							dengan
-							masyarakat tertentu, bahkan makanan ini bisa dijadikan tolok ukur ciri khas suatu daerah
-							tertentu
-						</p>
-					</div>
-				</article>
+        <!-- Stats Section -->
+        <section class="stats-section py-5">
+            <div class="container">
+                <div class="row g-4 text-center">
+                    <div class="col-md-3 col-6">
+                        <div class="stat-card fade-in">
+                            <i class="fas fa-recipe fa-2x mb-2"></i>
+                            <h3 class="stat-number">8+</h3>
+                            <p class="stat-label">Resep Masakan</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-card fade-in">
+                            <i class="fas fa-users fa-2x mb-2"></i>
+                            <h3 class="stat-number">1000+</h3>
+                            <p class="stat-label">Pembaca</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-card fade-in">
+                            <i class="fas fa-heart fa-2x mb-2"></i>
+                            <h3 class="stat-number">100%</h3>
+                            <p class="stat-label">Resep Teruji</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-card fade-in">
+                            <i class="fas fa-clock fa-2x mb-2"></i>
+                            <h3 class="stat-number">24/7</h3>
+                            <p class="stat-label">Akses Online</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Recipes Section -->
+        <section id="recipes" class="py-5">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="text-center mb-5 fade-in">
+                    <h2 class="section-title mb-3">
+                        <i class="fas fa-fire me-2"></i>Resep Pilihan
+                    </h2>
+                    <p class="text-muted">Pilihan resep terbaik untuk masakan spesial Anda</p>
+                </div>
 
-				<div class="column">
-					<div class="border">
-						<img src="assets/img/rendang.jpg" alt="rendang" width="10" height="15">
-						<div class="nava" <p class="ket"><a href="html/rendang.html">Rendang</a></p>
-						</div>
-					</div>
-				</div>
+                <!-- Traditional Dishes -->
+                <div class="mb-5">
+                    <div class="d-flex align-items-center mb-4 fade-in">
+                        <div class="section-badge me-3">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3 class="category-title">Masakan Tradisional</h3>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="recipe-card fade-in">
+                                <div class="recipe-badge">
+                                    <span class="badge bg-warning"><i class="fas fa-star me-1"></i>Populer</span>
+                                </div>
+                                <img src="assets/img/rendang.jpg" alt="Rendang">
+                                <div class="recipe-card-body">
+                                    <h4 class="recipe-title">Rendang</h4>
+                                    <p class="recipe-desc">Daging sapi empuk dengan bumbu rempah khas Minang yang kaya rasa</p>
+                                    <div class="recipe-meta">
+                                        <span><i class="fas fa-clock"></i> 4 Jam</span>
+                                        <span><i class="fas fa-user-friends"></i> 4-5 Orang</span>
+                                    </div>
+                                    <a href="html/rendang.html" class="btn btn-custom w-100">
+                                        <i class="fas fa-arrow-right me-1"></i>Lihat Resep
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="recipe-card fade-in">
+                                <img src="assets/img/sotobetawi.jpg" alt="Soto Betawi">
+                                <div class="recipe-card-body">
+                                    <h4 class="recipe-title">Soto Betawi</h4>
+                                    <p class="recipe-desc">Sup daging dengan santan yang gurih dan hangat, khas Jakarta</p>
+                                    <div class="recipe-meta">
+                                        <span><i class="fas fa-clock"></i> 90 Menit</span>
+                                        <span><i class="fas fa-user-friends"></i> 4 Orang</span>
+                                    </div>
+                                    <a href="html/soto betawi.html" class="btn btn-custom w-100">
+                                        <i class="fas fa-arrow-right me-1"></i>Lihat Resep
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="recipe-card fade-in">
+                                <img src="assets/img/gudeg.jpg" alt="Gudeg">
+                                <div class="recipe-card-body">
+                                    <h4 class="recipe-title">Gudeg</h4>
+                                    <p class="recipe-desc">Masakan nangka muda khas Yogyakarta dengan rasa manis gurih</p>
+                                    <div class="recipe-meta">
+                                        <span><i class="fas fa-clock"></i> 2 Jam</span>
+                                        <span><i class="fas fa-user-friends"></i> 4-5 Orang</span>
+                                    </div>
+                                    <a href="html/gudeg.html" class="btn btn-custom w-100">
+                                        <i class="fas fa-arrow-right me-1"></i>Lihat Resep
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Home-style Dishes -->
+                <div>
+                    <div class="d-flex align-items-center mb-4 fade-in">
+                        <div class="section-badge me-3">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="category-title">Masakan Rumahan</h3>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="recipe-card fade-in">
+                                <div class="recipe-badge">
+                                    <span class="badge bg-success"><i class="fas fa-bolt me-1"></i>Cepat</span>
+                                </div>
+                                <img src="assets/img/nasigoreng.jpg" alt="Nasi Goreng">
+                                <div class="recipe-card-body">
+                                    <h4 class="recipe-title">Nasi Goreng</h4>
+                                    <p class="recipe-desc">Nasi goreng spesial dengan bumbu rahasia yang menggugah selera</p>
+                                    <div class="recipe-meta">
+                                        <span><i class="fas fa-clock"></i> 30 Menit</span>
+                                        <span><i class="fas fa-user-friends"></i> 2-3 Orang</span>
+                                    </div>
+                                    <a href="html/nasigoreng.html" class="btn btn-custom w-100">
+                                        <i class="fas fa-arrow-right me-1"></i>Lihat Resep
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="recipe-card fade-in">
+                                <img src="assets/img/terongbalado.jpg" alt="Terong Balado">
+                                <div class="recipe-card-body">
+                                    <h4 class="recipe-title">Terong Balado</h4>
+                                    <p class="recipe-desc">Terong goreng dengan sambal balado pedas manis khas Padang</p>
+                                    <div class="recipe-meta">
+                                        <span><i class="fas fa-clock"></i> 25 Menit</span>
+                                        <span><i class="fas fa-user-friends"></i> 3 Orang</span>
+                                    </div>
+                                    <a href="html/terong balado.html" class="btn btn-custom w-100">
+                                        <i class="fas fa-arrow-right me-1"></i>Lihat Resep
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="recipe-card fade-in">
+                                <div class="recipe-badge">
+                                    <span class="badge bg-info"><i class="fas fa-leaf me-1"></i>Sehat</span>
+                                </div>
+                                <img src="assets/img/cahkangkung.jpg" alt="Cah Kangkung">
+                                <div class="recipe-card-body">
+                                    <h4 class="recipe-title">Cah Kangkung</h4>
+                                    <p class="recipe-desc">Tumis kangkung segar dengan bumbu tauco yang lezat</p>
+                                    <div class="recipe-meta">
+                                        <span><i class="fas fa-clock"></i> 15 Menit</span>
+                                        <span><i class="fas fa-user-friends"></i> 3 Orang</span>
+                                    </div>
+                                    <a href="html/cahkangkung.html" class="btn btn-custom w-100">
+                                        <i class="fas fa-arrow-right me-1"></i>Lihat Resep
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-				<div class="column">
-					<div class="border">
-						<img src="assets/img/sotobetawi.jpg" alt="betawi" width="10" height="15">
-						<div class="nava" <p class="ket"><a href="html/soto betawi.html">Soto Betawi</a></p>
-						</div>
-					</div>
-				</div>
+        <!-- About Preview Section -->
+        <section class="about-preview py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0 fade-in">
+                        <img src="assets/img/Dicky.jpg" alt="Dicky Ade Mahendra" class="about-preview-img">
+                    </div>
+                    <div class="col-lg-6 fade-in">
+                        <h2 class="section-title text-start mb-4">Tentang Dapoer Adem</h2>
+                        <p class="mb-3">
+                            Halo! Saya <strong>Dicky Ade Mahendra</strong>, teman-teman biasa memanggil saya Diki, Ade, atau Adem. 
+                            Saya berasal dari Bekasi dan saat ini sedang menempuh pendidikan di FTI UG.
+                        </p>
+                        <p class="mb-4">
+                            Web ini saya buat karena kecintaan saya pada dunia kuliner, terutama masakan tradisional 
+                            dan rumahan Indonesia. Di sini Anda akan menemukan berbagai resep praktis, mudah, sehat, 
+                            dan bergizi yang bisa disajikan bersama keluarga.
+                        </p>
+                        <a href="html/aboutus.html" class="btn btn-custom btn-lg">
+                            <i class="fas fa-user me-2"></i>Lebih Lengkap Tentang Saya
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-				<div class="column">
-					<div class="border">
-						<img src="assets/img/gudeg.jpg" alt="gudeg" width="10" height="15">
-						<div class="nava" <p class="ket"><a href="html/gudeg.html"> Gudeg</a></p>
-						</div>
-					</div>
-				</div>
+        <!-- CTA Section -->
+        <section class="cta-section py-5">
+            <div class="container">
+                <div class="cta-box text-center fade-in">
+                    <h2 class="mb-3"><i class="fas fa-comments me-2"></i>Punya Saran & Masukan?</h2>
+                    <p class="lead mb-4">Kami sangat menghargai setiap saran dan masukan dari Anda untuk perkembangan web ini</p>
+                    <form class="contact-form d-inline-block" id="feedbackForm">
+                        <div class="row g-3 justify-content-center">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" name="name" placeholder="Nama Anda" required>
+                            </div>
+                            <div class="col-md-5">
+                                <textarea class="form-control" name="message" rows="1" placeholder="Saran & Masukan..." required></textarea>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-custom w-100">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-			</div>
-			<aside>
-				<div class="rightcolumn">
-					<div class="card">
-						<h2>Biodata</h2>
-						<div class="fakeimg" ;"><img src="assets/img/Dicky.jpg" alt="dicky" height="150">
-						</div>
-						<br>
-						<li><strong>Nama</strong>: Dicky Ade Mahendra</li><br>
-						<li><strong>Tanggal Lahir</strong>: 5 Agustus 2000</li><br>
-						<li><strong>Tinggal</strong>: Kabupaten Bekasi</li><br>
-						<br>
-						<div class="nava" <p class="ket"><a href="html/aboutus.html">Mau Tau tentang saya klik ini</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</aside>
+        <!-- Social Media Section -->
+        <section class="social-section py-5">
+            <div class="container text-center">
+                <h3 class="mb-4 fade-in"><i class="fas fa-share-alt me-2"></i>Follow Kami</h3>
+                <div class="social-links fade-in">
+                    <a href="https://instagram.com/amhndr_" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>@amhndr_</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                        <span>Ala Dapoer Adem</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-youtube"></i>
+                        <span>Dapoer Adem Channel</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-title"><i class="fas fa-utensils me-2"></i>Ala Dapoer Adem</h4>
+                    <p>Temukan resep masakan tradisional dan rumahan yang praktis, mudah, dan lezat untuk keluarga tercinta.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-title"><i class="fas fa-link me-2"></i>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right me-2"></i>Home</a></li>
+                        <li><a href="html/aboutus.html"><i class="fas fa-chevron-right me-2"></i>About Us</a></li>
+                        <li><a href="html/contact.html"><i class="fas fa-chevron-right me-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-title"><i class="fas fa-envelope me-2"></i>Kontak</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope me-2"></i>Dickyadem@gmail.com</li>
+                        <li><i class="fab fa-whatsapp me-2"></i>0812-3456-7890</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Kabupaten Bekasi</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Copyright <strong>Dicky Ade Mahendra</strong>. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
 
-			<div class="leftcolumn">
-				<article>
-					<div class="card">
-						<h2 class="a"><strong>Masakan Rumahan</strong></h2>
-						<br>
-						<p>Makanan rumahan atau dalam Bahasa Inggrisnya adalah comfort food adalah makanan yang
-							bertujuan
-							untuk
-							menimbulkan rasa hangat dan nyaman, yang menimbulkan nostalgia atau nilai tersendiri bagi
-							seseorang.
-							Biasanya makanan rumahan memiliki nilai kalori sangat tinggi, tinggi karbohidrat, dan mudah
-							disajikan.</p>
-					</div>
-				</article>
-				<div class="column">
-					<div class="border">
-						<img src="assets/img/nasigoreng.jpg" alt="nasigoreng" width="10" height="15">
-						<div class="nava" <p class="ket"><a href="html/nasigoreng.html"> Nasi Goreng</a></p>
-						</div>
-					</div>
-				</div>
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-
-				<div class="column">
-					<div class="border">
-						<img src="assets/img/terongbalado.jpg" alt="terongbalado" width="10" height="15">
-						<div class="nava" <p class="ket"><a href="html/terong balado.html">Terong Balado</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="column">
-					<div class="border">
-						<img src="assets/img/cahkangkung.jpg" alt="cahkangkung" width="10" height="15">
-						<div class="nava" <p class="ket"><a href="html/cahkangkung.html"> Cah Kangkung</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<aside>
-				<div class="rightcolumn">
-					<div class="card">
-						<h3> Follow Me</h3>
-						<p> Ig : amhndr_</p>
-
-					</div>
-
-					<div class="card">
-						<h3> Saran & Masukan </h3>
-						<p>jika ada saran & masukan untuk web ini tolong samapaikan lewat form dibawah ini, saran &
-							masukan
-							yang
-							anda berikan akan bermanfaat untuk perkembangan web ini </p>
-						<form action="" method="">
-							<input type="text" name="" required>
-							<input type="submit" value="submit">
-						</form>
-					</div>
-
-				</div>
-			</aside>
-		</section>
-	</main>
-
-	<footer class="footer nava">
-		<p>&copy; Copyright<strong>
-				Dicky
-			</strong>. All Rights Reserved</p>
-	</footer>
-
-	</div>
-
-
-
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
 </body>
 
-<html>
+</html>

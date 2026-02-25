@@ -2,78 +2,165 @@
 <html lang="en">
 
 <head>
-    <title>Nasi Goreng</title>
+    <title>Nasi Goreng - Ala Dapoer Adem</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link href='https://fonts.googleapis.comcss?family=Euphoria Script' rel='stylesheet'>
 </head>
 
-
 <body>
-    <nav>
-        <div class="nav">
-            <a href="../index.html"> Home</a>
-            &nbsp;
-        </div>
-
-    <main>
-        <section style="text-align: center;">
-            <h1> <strong> NASI GORENG </strong> </h1>
-            <img class="foto2" src="../assets/img/nasigoreng.jpg" alt="Nasi Goreng">
-
-        </section>
-
-
-        <section>
-            <article>
-                <ul> <strong> Bahan - Bahan </strong>
-                    <li>Nasi 400 gram.</li>
-                    <li>3sdm minyak sayur.</li>
-                    <li>150 gram daging ayam (goreng dan suwir-suwir).</li>
-                    <li>3 sdm kecap manis.</li>
-                    <li>2 butir telur ayam.</li>
-                    <li>1 sdm kaldu bubuk</li>
-                    <li>1/2 sdt merica bubuk</li>
-                </ul>
-
-                <ul> <strong> Bumbu Halus </strong>
-                    <li>5 siung bawang merah.</li>
-                    <li>3 siung bawang putih.</li>
-                    <li>3 buah cabai merah.</li>
-                    <li>2 sdt terasi goreng.</li>
-                    <li>2sdt garam.</li>
-                </ul>
-
-                <ul> <strong> Cara Memasak </strong>
-                    <li>Siapkan wajan berisi minyak lalu tumis bumbu halus seperti garam, cabai, bawang putih, bawang
-                        merah
-                        serta
-                        terasi yang sudah digoreng terlebih dahulu. Tumis hingga bumbu mengeluarkan bau harum.</li>
-                    <li>Ambil telur ayam yang sudah disiapkan, kocok lepas hingga rata. Kemudian tuangkan kedalam bumbu
-                        dan aduk
-                        hingga merata.</li>
-                    <li>Masukkan nasi, ayam suwir, kecap serta kaldu bubuk. Jangan lupa pula untuk menambahkan merica
-                        bubuk.
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Ala Dapoer Adem</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
                     </li>
-                    <li>Aduk-aduk semua bahan hingga tercampur dengan sempurna dan terlihat agak kering. Koreksi rasanya
-                        apakah
-                        sudah sesuai atau belum.</li>
-                    <li>Siapkan wadah, tuangkan nasi goreng kedalamnya. Dampingi penyajian nasi goreng dengan kerupuk
-                        dan juga
-                        acar
-                        mentimun agar lebih mantap.</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
-            </article>
-        </section>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="recipe-detail fade-in">
+            <!-- Recipe Header -->
+            <div class="text-center mb-4">
+                <a href="../index.html" class="btn btn-outline-secondary mb-3">
+                    <i class="fas fa-arrow-left"></i> Kembali
+                </a>
+                <h1>Nasi Goreng</h1>
+                <img src="../assets/img/nasigoreng.jpg" alt="Nasi Goreng" class="img-fluid mb-4">
+            </div>
+
+            <div class="row">
+                <!-- Recipe Content -->
+                <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <!-- Ingredients -->
+                            <h3><i class="fas fa-shopping-basket"></i> Bahan-bahan</h3>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item"><i class="fas fa-check"></i> 400 gram nasi</li>
+                                <li class="list-group-item"><i class="fas fa-check"></i> 3 sdm minyak sayur</li>
+                                <li class="list-group-item"><i class="fas fa-check"></i> 150 gram daging ayam (goreng
+                                    dan suwir-suwir)</li>
+                                <li class="list-group-item"><i class="fas fa-check"></i> 3 sdm kecap manis</li>
+                                <li class="list-group-item"><i class="fas fa-check"></i> 2 butir telur ayam</li>
+                                <li class="list-group-item"><i class="fas fa-check"></i> 1 sdm kaldu bubuk</li>
+                                <li class="list-group-item"><i class="fas fa-check"></i> 1/2 sdt merica bubuk</li>
+                            </ul>
+
+                            <!-- Spices -->
+                            <h3><i class="fas fa-pepper-hot"></i> Bumbu Halus</h3>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item"><i class="fas fa-check"></i> 5 siung bawang merah</li>
+                                <li class="list-group-item"><i class="fas fa-check"></i> 3 siung bawang putih</li>
+                                <li class="list-group-item"><i class="fas fa-check"></i> 3 buah cabai merah</li>
+                                <li class="list-group-item"><i class="fas fa-check"></i> 2 sdt terasi goreng</li>
+                                <li class="list-group-item"><i class="fas fa-check"></i> 2 sdt garam</li>
+                            </ul>
+
+                            <!-- Instructions -->
+                            <h3><i class="fas fa-fire"></i> Cara Memasak</h3>
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">Siapkan wajan berisi minyak lalu tumis bumbu halus seperti
+                                    garam, cabai, bawang putih, bawang merah serta terasi yang sudah digoreng terlebih
+                                    dahulu. Tumis hingga bumbu mengeluarkan bau harum.</li>
+                                <li class="list-group-item">Ambil telur ayam yang sudah disiapkan, kocok lepas hingga
+                                    rata. Kemudian tuangkan kedalam bumbu dan aduk hingga merata.</li>
+                                <li class="list-group-item">Masukkan nasi, ayam suwir, kecap serta kaldu bubuk. Jangan
+                                    lupa pula untuk menambahkan merica bubuk.</li>
+                                <li class="list-group-item">Aduk-aduk semua bahan hingga tercampur dengan sempurna dan
+                                    terlihat agak kering. Koreksi rasanya apakah sudah sesuai atau belum.</li>
+                                <li class="list-group-item">Siapkan wadah, tuangkan nasi goreng kedalamnya. Dampingi
+                                    penyajian nasi goreng dengan kerupuk dan juga acar mentimun agar lebih mantap.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Recipe Info Card -->
+                    <div class="sidebar-card fade-in">
+                        <h4><i class="fas fa-info-circle"></i> Info Resep</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-clock"></i> <strong>Waktu:</strong> 30 menit</li>
+                            <li class="mb-2"><i class="fas fa-utensils"></i> <strong>Porsi:</strong> 2-3 orang</li>
+                            <li class="mb-2"><i class="fas fa-fire"></i> <strong>Kesulitan:</strong> Mudah</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tips Card -->
+                    <div class="sidebar-card fade-in">
+                        <h4><i class="fas fa-lightbulb"></i> Tips</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">• Gunakan nasi dingin agar tidak lengket</li>
+                            <li class="mb-2">• Api harus besar saat menumis untuk aroma yang lebih sedap</li>
+                            <li class="mb-2">• Tambahkan acar dan kerupuk untuk pelengkap</li>
+                        </ul>
+                    </div>
+
+                    <!-- Other Recipes -->
+                    <div class="sidebar-card fade-in">
+                        <h4><i class="fas fa-book-open"></i> Resep Lainnya</h4>
+                        <div class="list-group">
+                            <a href="rendang.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-drumstick-bite"></i> Rendang
+                            </a>
+                            <a href="soto betawi.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-bowl-food"></i> Soto Betawi
+                            </a>
+                            <a href="gudeg.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-bowl-rice"></i> Gudeg
+                            </a>
+                            <a href="terong balado.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-eggplant"></i> Terong Balado
+                            </a>
+                            <a href="cahkangkung.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-leaf"></i> Cah Kangkung
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer class="footer nava">
-        <p>&copy; Copyright<strong>
-                Dicky
-            </strong>. All Rights Reserved</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="mb-0">&copy; Copyright <strong>Dicky</strong>. All Rights Reserved</p>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/app.js"></script>
 </body>
 
-</WebDasar/WebDasar/html>
+</html>

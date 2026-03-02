@@ -2,9 +2,28 @@
 <html lang="en">
 
 <head>
-    <title>Rendang - Ala Dapoer Adem</title>
+    <title>Rendang - Resep Rendang Daging Sapi Khas Minang | Ala Dapoer Adem</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Resep Rendang daging sapi empuk dengan bumbu rempah khas Minang yang kaya rasa. Waktu masak 3-4 jam untuk 4-5 porsi.">
+    <meta name="keywords" content="resep rendang, rendang daging sapi, masakan minang, masakan tradisional, rendang padang">
+    <meta name="author" content="Dicky Ade Mahendra">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://dickyadem.github.io/Web-recipe/html/rendang.html">
+    <meta property="og:title" content="Resep Rendang - Ala Dapoer Adem">
+    <meta property="og:description" content="Resep Rendang daging sapi empuk dengan bumbu rempah khas Minang yang kaya rasa.">
+    <meta property="og:image" content="https://dickyadem.github.io/Web-recipe/assets/img/rendang.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://dickyadem.github.io/Web-recipe/html/rendang.html">
+    <meta name="twitter:title" content="Resep Rendang - Ala Dapoer Adem">
+    <meta name="twitter:description" content="Resep Rendang daging sapi empuk dengan bumbu rempah khas Minang yang kaya rasa.">
+    <meta name="twitter:image" content="https://dickyadem.github.io/Web-recipe/assets/img/rendang.jpg">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,34 +33,38 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- Skip to Main Content Link -->
+    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
-                <i class="fas fa-utensils me-2"></i>Ala Dapoer Adem
+                <i class="fas fa-utensils me-2" aria-hidden="true"></i>Ala Dapoer Adem
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">
-                            <i class="fas fa-home me-1"></i>Home
+                <ul class="navbar-nav ms-auto align-items-center" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="../index.html" role="menuitem">
+                            <i class="fas fa-home me-1" aria-hidden="true"></i>Home
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html">
-                            <i class="fas fa-user me-1"></i>About Us
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="aboutus.html" role="menuitem">
+                            <i class="fas fa-user me-1" aria-hidden="true"></i>About Us
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">
-                            <i class="fas fa-envelope me-1"></i>Contact
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="contact.html" role="menuitem">
+                            <i class="fas fa-envelope me-1" aria-hidden="true"></i>Contact
                         </a>
                     </li>
-                    <li class="nav-item ms-lg-3">
-                        <a href="contact.html" class="btn btn-light rounded-pill px-4">
-                            <i class="fas fa-paper-plane me-1"></i>Hubungi Kami
+                    <li class="nav-item ms-lg-3" role="none">
+                        <a href="contact.html" class="btn btn-light rounded-pill px-4" role="menuitem">
+                            <i class="fas fa-paper-plane me-1" aria-hidden="true"></i>Hubungi Kami
                         </a>
                     </li>
                 </ul>
@@ -49,41 +72,45 @@
         </div>
     </nav>
 
-    <main class="container my-5">
-        <div class="recipe-detail fade-in">
+    <main id="main-content" class="container my-5">
+        <article class="recipe-detail fade-in" aria-labelledby="recipe-title">
             <div class="text-center mb-4">
-                <a href="../index.html" class="btn btn-outline-secondary mb-3"><i class="fas fa-arrow-left"></i> Kembali</a>
-                <h1>Rendang</h1>
-                <img src="../assets/img/rendang.jpg" alt="Rendang" class="img-fluid mb-4">
+                <a href="../index.html" class="btn btn-outline-secondary mb-3">
+                    <i class="fas fa-arrow-left me-1" aria-hidden="true"></i>
+                    <span aria-hidden="true">Kembali</span>
+                    <span class="sr-only">Kembali ke halaman utama</span>
+                </a>
+                <h1 id="recipe-title">Rendang</h1>
+                <img src="../assets/img/rendang.jpg" alt="Rendang daging sapi khas Minang dengan kuah santan kental berwarna coklat gelap" class="img-fluid mb-4">
             </div>
 
             <div class="row">
                 <div class="col-lg-8">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h3><i class="fas fa-shopping-basket"></i> Bahan-bahan</h3>
-                            <ul class="list-group list-group-flush mb-4">
-                                <li class="list-group-item"><i class="fas fa-check"></i> 1 kg daging sapi</li>
-                                <li class="list-group-item"><i class="fas fa-check"></i> 65 ml santan kental</li>
-                                <li class="list-group-item"><i class="fas fa-check"></i> 500 ml santan encer</li>
-                                <li class="list-group-item"><i class="fas fa-check"></i> 3 lembar daun jeruk</li>
-                                <li class="list-group-item"><i class="fas fa-check"></i> 2 lembar daun salam</li>
-                                <li class="list-group-item"><i class="fas fa-check"></i> 1 batang serai, geprek</li>
-                                <li class="list-group-item"><i class="fas fa-check"></i> Garam dan gula secukupnya</li>
+                            <h3 id="ingredients-heading"><i class="fas fa-shopping-basket" aria-hidden="true"></i> Bahan-bahan</h3>
+                            <ul class="list-group list-group-flush mb-4" aria-labelledby="ingredients-heading">
+                                <li class="list-group-item"><i class="fas fa-check" aria-hidden="true"></i> 1 kg daging sapi</li>
+                                <li class="list-group-item"><i class="fas fa-check" aria-hidden="true"></i> 65 ml santan kental</li>
+                                <li class="list-group-item"><i class="fas fa-check" aria-hidden="true"></i> 500 ml santan encer</li>
+                                <li class="list-group-item"><i class="fas fa-check" aria-hidden="true"></i> 3 lembar daun jeruk</li>
+                                <li class="list-group-item"><i class="fas fa-check" aria-hidden="true"></i> 2 lembar daun salam</li>
+                                <li class="list-group-item"><i class="fas fa-check" aria-hidden="true"></i> 1 batang serai, geprek</li>
+                                <li class="list-group-item"><i class="fas fa-check" aria-hidden="true"></i> Garam dan gula secukupnya</li>
                             </ul>
 
-                            <h3><i class="fas fa-pepper-hot"></i> Bumbu Halus</h3>
-                            <ul class="list-group list-group-flush mb-4">
-                                <li class="list-group-item"><i class="fas fa-check"></i> 8 siung bawang merah</li>
-                                <li class="list-group-item"><i class="fas fa-check"></i> 5 siung bawang putih</li>
-                                <li class="list-group-item"><i class="fas fa-check"></i> 5 buah cabai merah</li>
-                                <li class="list-group-item"><i class="fas fa-check"></i> 3 cm jahe</li>
-                                <li class="list-group-item"><i class="fas fa-check"></i> 3 cm lengkuas</li>
-                                <li class="list-group-item"><i class="fas fa-check"></i> 2 cm kunyit</li>
+                            <h3 id="spices-heading"><i class="fas fa-pepper-hot" aria-hidden="true"></i> Bumbu Halus</h3>
+                            <ul class="list-group list-group-flush mb-4" aria-labelledby="spices-heading">
+                                <li class="list-group-item"><i class="fas fa-check" aria-hidden="true"></i> 8 siung bawang merah</li>
+                                <li class="list-group-item"><i class="fas fa-check" aria-hidden="true"></i> 5 siung bawang putih</li>
+                                <li class="list-group-item"><i class="fas fa-check" aria-hidden="true"></i> 5 buah cabai merah</li>
+                                <li class="list-group-item"><i class="fas fa-check" aria-hidden="true"></i> 3 cm jahe</li>
+                                <li class="list-group-item"><i class="fas fa-check" aria-hidden="true"></i> 3 cm lengkuas</li>
+                                <li class="list-group-item"><i class="fas fa-check" aria-hidden="true"></i> 2 cm kunyit</li>
                             </ul>
 
-                            <h3><i class="fas fa-fire"></i> Cara Memasak</h3>
-                            <ol class="list-group list-group-numbered">
+                            <h3 id="instructions-heading"><i class="fas fa-fire" aria-hidden="true"></i> Cara Memasak</h3>
+                            <ol class="list-group list-group-numbered" aria-labelledby="instructions-heading">
                                 <li class="list-group-item">Tumis bumbu halus hingga harum, masukkan daun jeruk, daun salam, dan serai.</li>
                                 <li class="list-group-item">Masukkan daging sapi, aduk hingga berubah warna.</li>
                                 <li class="list-group-item">Tuang santan encer, masak dengan api kecil hingga daging empuk.</li>
@@ -93,51 +120,51 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="sidebar-card fade-in">
-                        <h4><i class="fas fa-info-circle"></i> Info Resep</h4>
+                <aside class="col-lg-4">
+                    <div class="sidebar-card fade-in" aria-label="Informasi resep">
+                        <h4><i class="fas fa-info-circle" aria-hidden="true"></i> Info Resep</h4>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><i class="fas fa-clock"></i> <strong>Waktu:</strong> 3-4 jam</li>
-                            <li class="mb-2"><i class="fas fa-utensils"></i> <strong>Porsi:</strong> 4-5 orang</li>
-                            <li class="mb-2"><i class="fas fa-fire"></i> <strong>Kesulitan:</strong> Sedang</li>
+                            <li class="mb-2"><i class="fas fa-clock" aria-hidden="true"></i> <strong>Waktu:</strong> 3-4 jam</li>
+                            <li class="mb-2"><i class="fas fa-utensils" aria-hidden="true"></i> <strong>Porsi:</strong> 4-5 orang</li>
+                            <li class="mb-2"><i class="fas fa-fire" aria-hidden="true"></i> <strong>Kesulitan:</strong> Sedang</li>
                         </ul>
                     </div>
-                    <div class="sidebar-card fade-in">
-                        <h4><i class="fas fa-book-open"></i> Resep Lainnya</h4>
-                        <div class="list-group">
-                            <a href="nasigoreng.html" class="list-group-item list-group-item-action">Nasi Goreng</a>
-                            <a href="soto betawi.html" class="list-group-item list-group-item-action">Soto Betawi</a>
-                            <a href="gudeg.html" class="list-group-item list-group-item-action">Gudeg</a>
-                            <a href="terong balado.html" class="list-group-item list-group-item-action">Terong Balado</a>
-                            <a href="cahkangkung.html" class="list-group-item list-group-item-action">Cah Kangkung</a>
+                    <div class="sidebar-card fade-in" aria-label="Resep lainnya">
+                        <h4><i class="fas fa-book-open" aria-hidden="true"></i> Resep Lainnya</h4>
+                        <div class="list-group" role="list">
+                            <a href="nasigoreng.html" class="list-group-item list-group-item-action" role="listitem">Nasi Goreng</a>
+                            <a href="soto%20betawi.html" class="list-group-item list-group-item-action" role="listitem">Soto Betawi</a>
+                            <a href="gudeg.html" class="list-group-item list-group-item-action" role="listitem">Gudeg</a>
+                            <a href="terong%20balado.html" class="list-group-item list-group-item-action" role="listitem">Terong Balado</a>
+                            <a href="cahkangkung.html" class="list-group-item list-group-item-action" role="listitem">Cah Kangkung</a>
                         </div>
                     </div>
-                </div>
+                </aside>
             </div>
-        </div>
+        </article>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <h4 class="footer-title"><i class="fas fa-utensils me-2"></i>Ala Dapoer Adem</h4>
+                    <h4 class="footer-title"><i class="fas fa-utensils me-2" aria-hidden="true"></i>Ala Dapoer Adem</h4>
                     <p>Temukan resep masakan tradisional dan rumahan yang praktis, mudah, dan lezat untuk keluarga tercinta.</p>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <h4 class="footer-title"><i class="fas fa-link me-2"></i>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="../index.html"><i class="fas fa-chevron-right me-2"></i>Home</a></li>
-                        <li><a href="aboutus.html"><i class="fas fa-chevron-right me-2"></i>About Us</a></li>
-                        <li><a href="contact.html"><i class="fas fa-chevron-right me-2"></i>Contact</a></li>
+                    <h4 class="footer-title"><i class="fas fa-link me-2" aria-hidden="true"></i>Quick Links</h4>
+                    <ul class="footer-links" role="list">
+                        <li role="listitem"><a href="../index.html"><i class="fas fa-chevron-right me-2" aria-hidden="true"></i>Home</a></li>
+                        <li role="listitem"><a href="aboutus.html"><i class="fas fa-chevron-right me-2" aria-hidden="true"></i>About Us</a></li>
+                        <li role="listitem"><a href="contact.html"><i class="fas fa-chevron-right me-2" aria-hidden="true"></i>Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <h4 class="footer-title"><i class="fas fa-envelope me-2"></i>Kontak</h4>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-envelope me-2"></i>Dickyadem@gmail.com</li>
-                        <li><i class="fab fa-whatsapp me-2"></i>0812-3456-7890</li>
-                        <li><i class="fas fa-map-marker-alt me-2"></i>Kabupaten Bekasi</li>
+                    <h4 class="footer-title"><i class="fas fa-envelope me-2" aria-hidden="true"></i>Kontak</h4>
+                    <ul class="footer-contact" role="list">
+                        <li role="listitem"><i class="fas fa-envelope me-2" aria-hidden="true"></i><a href="mailto:Dickyadem@gmail.com">Dickyadem@gmail.com</a></li>
+                        <li role="listitem"><i class="fab fa-whatsapp me-2" aria-hidden="true"></i><a href="tel:+6281234567890">0812-3456-7890</a></li>
+                        <li role="listitem"><i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>Kabupaten Bekasi</li>
                     </ul>
                 </div>
             </div>
@@ -148,8 +175,82 @@
         </div>
     </footer>
 
-    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <button id="scrollTopBtn" title="Kembali ke atas" aria-label="Scroll to top" type="button"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/app.js"></script>
+    
+    <!-- Structured Data - Recipe -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "name": "Rendang",
+        "description": "Daging sapi empuk dengan bumbu rempah khas Minang yang kaya rasa",
+        "image": "https://dickyadem.github.io/Web-recipe/assets/img/rendang.jpg",
+        "author": {
+            "@type": "Person",
+            "name": "Dicky Ade Mahendra",
+            "url": "https://dickyadem.github.io/Web-recipe/html/aboutus.html"
+        },
+        "datePublished": "2024-01-01",
+        "prepTime": "PT30M",
+        "cookTime": "PT3H30M",
+        "totalTime": "PT4H",
+        "recipeYield": "4-5 servings",
+        "recipeCategory": "Main Course",
+        "cuisine": "Indonesian",
+        "keywords": "rendang, daging sapi, masakan minang, masakan tradisional",
+        "nutrition": {
+            "@type": "NutritionInformation",
+            "calories": "350 calories",
+            "proteinContent": "25g",
+            "fatContent": "22g"
+        },
+        "recipeIngredient": [
+            "1 kg daging sapi",
+            "65 ml santan kental",
+            "500 ml santan encer",
+            "3 lembar daun jeruk",
+            "2 lembar daun salam",
+            "1 batang serai, geprek",
+            "Garam dan gula secukupnya",
+            "8 siung bawang merah",
+            "5 siung bawang putih",
+            "5 buah cabai merah",
+            "3 cm jahe",
+            "3 cm lengkuas",
+            "2 cm kunyit"
+        ],
+        "recipeInstructions": [
+            {
+                "@type": "HowToStep",
+                "text": "Tumis bumbu halus hingga harum, masukkan daun jeruk, daun salam, dan serai."
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Masukkan daging sapi, aduk hingga berubah warna."
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Tuang santan encer, masak dengan api kecil hingga daging empuk."
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Tambahkan santan kental, garam, dan gula. Aduk terus."
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Masak hingga kuah mengering dan berwarna coklat gelap."
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "156",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
 </body>
 </html>

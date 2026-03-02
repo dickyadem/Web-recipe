@@ -1,0 +1,36 @@
+<!-- Navigation Component -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" aria-label="Main navigation">
+    <div class="container">
+        <a class="navbar-brand" href="{ROOT}index.html">
+            <i class="fas fa-utensils me-2" aria-hidden="true"></i>Ala Dapoer Adem
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center" role="menubar">
+                <li class="nav-item" role="none">
+                    <a class="nav-link {HOME_ACTIVE}" href="{ROOT}index.html" role="menuitem" {HOME_CURRENT}>
+                        <i class="fas fa-home me-1" aria-hidden="true"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a class="nav-link {ABOUT_ACTIVE}" href="{ROOT}html/aboutus.html" role="menuitem">
+                        <i class="fas fa-user me-1" aria-hidden="true"></i>About Us
+                    </a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a class="nav-link {CONTACT_ACTIVE}" href="{ROOT}html/contact.html" role="menuitem">
+                        <i class="fas fa-envelope me-1" aria-hidden="true"></i>Contact
+                    </a>
+                </li>
+                <li class="nav-item ms-lg-3" role="none">
+                    <a href="{ROOT}html/contact.html" class="btn btn-light rounded-pill px-4" role="menuitem">
+                        <i class="fas fa-paper-plane me-1" aria-hidden="true"></i>Hubungi Kami
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

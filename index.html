@@ -156,6 +156,59 @@
                     <p class="text-muted">Pilihan resep terbaik untuk masakan spesial Anda</p>
                 </div>
 
+                <!-- Search & Filter -->
+                <div class="row mb-4 fade-in">
+                    <div class="col-12">
+                        <div class="search-filter-box p-4 bg-white rounded-3 shadow-sm">
+                            <div class="row g-3">
+                                <!-- Search Input -->
+                                <div class="col-md-4">
+                                    <label for="recipeSearch" class="form-label">
+                                        <i class="fas fa-search me-1" aria-hidden="true"></i>Cari Resep
+                                    </label>
+                                    <input type="text" id="recipeSearch" class="form-control" placeholder="Nama resep..." aria-label="Cari resep">
+                                </div>
+                                <!-- Category Filter -->
+                                <div class="col-md-3">
+                                    <label for="filterCategory" class="form-label">
+                                        <i class="fas fa-utensils me-1" aria-hidden="true"></i>Kategori
+                                    </label>
+                                    <select id="filterCategory" class="form-select" aria-label="Filter kategori">
+                                        <option value="all">Semua Kategori</option>
+                                        <option value="traditional">Masakan Tradisional</option>
+                                        <option value="home">Masakan Rumahan</option>
+                                    </select>
+                                </div>
+                                <!-- Time Filter -->
+                                <div class="col-md-3">
+                                    <label for="filterTime" class="form-label">
+                                        <i class="fas fa-clock me-1" aria-hidden="true"></i>Waktu Masak
+                                    </label>
+                                    <select id="filterTime" class="form-select" aria-label="Filter waktu masak">
+                                        <option value="all">Semua Waktu</option>
+                                        <option value="quick">&lt; 30 menit</option>
+                                        <option value="medium">30-60 menit</option>
+                                        <option value="long">&gt; 60 menit</option>
+                                    </select>
+                                </div>
+                                <!-- Reset Button -->
+                                <div class="col-md-2 d-flex align-items-end">
+                                    <button id="resetFilters" class="btn btn-outline-secondary w-100" type="button">
+                                        <i class="fas fa-redo me-1" aria-hidden="true"></i>Reset
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Results Count -->
+                            <div class="mt-3">
+                                <p class="mb-0 text-muted">
+                                    <i class="fas fa-info-circle me-1" aria-hidden="true"></i>
+                                    Menampilkan <strong id="recipeCount">0</strong> dari <strong id="totalRecipes">0</strong> resep
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Traditional Dishes -->
                 <div class="mb-5">
                     <div class="d-flex align-items-center mb-4 fade-in">
@@ -165,8 +218,8 @@
                         <h3 class="category-title">Masakan Tradisional</h3>
                     </div>
 
-                    <div class="row g-4">
-                        <div class="col-md-6 col-lg-4">
+                    <div class="row g-4" id="recipeGrid">
+                        <div class="col-md-6 col-lg-4" data-category="traditional" data-time="long" data-difficulty="hard">
                             <article class="recipe-card fade-in" aria-labelledby="rendang-title">
                                 <div class="recipe-badge">
                                     <span class="badge bg-warning" role="status"><i class="fas fa-star me-1" aria-hidden="true"></i>Populer</span>
@@ -188,7 +241,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6 col-lg-4" data-category="traditional" data-time="medium" data-difficulty="medium">
                             <article class="recipe-card fade-in" aria-labelledby="soto-betawi-title">
                                 <picture>
                                     <source srcset="assets/img/sotobetawi.webp" type="image/webp">
@@ -201,13 +254,13 @@
                                         <span><i class="fas fa-clock" aria-hidden="true"></i> <span class="sr-only">Waktu masak:</span> 90 Menit</span>
                                         <span><i class="fas fa-user-friends" aria-hidden="true"></i> <span class="sr-only">Porsi:</span> 4 Orang</span>
                                     </div>
-                                    <a href="html/soto%20betawi.html" class="btn btn-custom w-100" aria-label="Lihat resep Soto Betawi">
+                                    <a href="html/soto-betawi.html" class="btn btn-custom w-100" aria-label="Lihat resep Soto Betawi">
                                         <i class="fas fa-arrow-right me-1" aria-hidden="true"></i>Lihat Resep
                                     </a>
                                 </div>
                             </article>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6 col-lg-4" data-category="traditional" data-time="medium" data-difficulty="medium">
                             <article class="recipe-card fade-in" aria-labelledby="gudeg-title">
                                 <picture>
                                     <source srcset="assets/img/gudeg.webp" type="image/webp">
@@ -238,8 +291,8 @@
                         <h3 class="category-title">Masakan Rumahan</h3>
                     </div>
 
-                    <div class="row g-4">
-                        <div class="col-md-6 col-lg-4">
+                    <div class="row g-4" id="recipeGridHome">
+                        <div class="col-md-6 col-lg-4" data-category="home" data-time="medium" data-difficulty="easy">
                             <article class="recipe-card fade-in" aria-labelledby="nasigoreng-title">
                                 <div class="recipe-badge">
                                     <span class="badge bg-success" role="status"><i class="fas fa-bolt me-1" aria-hidden="true"></i>Cepat</span>
@@ -261,7 +314,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6 col-lg-4" data-category="home" data-time="quick" data-difficulty="easy">
                             <article class="recipe-card fade-in" aria-labelledby="terong-balado-title">
                                 <picture>
                                     <source srcset="assets/img/terongbalado.webp" type="image/webp">
@@ -274,13 +327,13 @@
                                         <span><i class="fas fa-clock" aria-hidden="true"></i> <span class="sr-only">Waktu masak:</span> 25 Menit</span>
                                         <span><i class="fas fa-user-friends" aria-hidden="true"></i> <span class="sr-only">Porsi:</span> 3 Orang</span>
                                     </div>
-                                    <a href="html/terong%20balado.html" class="btn btn-custom w-100" aria-label="Lihat resep Terong Balado">
+                                    <a href="html/terong-balado.html" class="btn btn-custom w-100" aria-label="Lihat resep Terong Balado">
                                         <i class="fas fa-arrow-right me-1" aria-hidden="true"></i>Lihat Resep
                                     </a>
                                 </div>
                             </article>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6 col-lg-4" data-category="home" data-time="quick" data-difficulty="easy">
                             <article class="recipe-card fade-in" aria-labelledby="cahkangkung-title">
                                 <div class="recipe-badge">
                                     <span class="badge bg-info" role="status"><i class="fas fa-leaf me-1" aria-hidden="true"></i>Sehat</span>

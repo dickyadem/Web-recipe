@@ -131,32 +131,45 @@
                 <div class="contact-info h-100">
                     <h3 class="brand-font mb-4" style="color: #e67300; font-size: 2rem;">Kirim Pesan</h3>
 
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" novalidate>
                         <div class="mb-3">
-                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <label for="name" class="form-label">Nama Lengkap <span class="text-danger">*</span></label>
                             <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan nama Anda"
-                                required>
+                                required minlength="3" maxlength="100" aria-required="true" aria-describedby="nameError">
+                            <div id="nameError" class="invalid-feedback"></div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
+                            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
                             <input type="email" class="form-control" id="email" name="email"
-                                placeholder="nama@email.com" required>
+                                placeholder="nama@email.com" required maxlength="255"
+                                aria-required="true" aria-describedby="emailError emailHelp">
+                            <div id="emailHelp" class="form-text">Kami tidak akan membagikan email Anda.</div>
+                            <div id="emailError" class="invalid-feedback"></div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="subject" class="form-label">Subjek</label>
+                            <label for="subject" class="form-label">Subjek <span class="text-danger">*</span></label>
                             <input type="text" class="form-control" id="subject" name="subject"
-                                placeholder="Subjek pesan" required>
+                                placeholder="Subjek pesan" required minlength="5" maxlength="200"
+                                aria-required="true" aria-describedby="subjectError">
+                            <div id="subjectError" class="invalid-feedback"></div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="message" class="form-label">Pesan</label>
+                            <label for="message" class="form-label">Pesan <span class="text-danger">*</span></label>
                             <textarea class="form-control" id="message" name="message" rows="5"
-                                placeholder="Tulis pesan Anda di sini..." required></textarea>
+                                placeholder="Tulis pesan Anda di sini..." required minlength="10" maxlength="2000"
+                                aria-required="true" aria-describedby="messageError messageCounter"></textarea>
+                            <div id="messageCounter" class="form-text text-end">0/2000 karakter</div>
+                            <div id="messageError" class="invalid-feedback"></div>
                         </div>
 
-                        <button type="submit" class="btn btn-custom w-100">
+                        <div id="formSuccess" class="alert alert-success d-none" role="alert">
+                            <i class="fas fa-check-circle me-2"></i>Pesan berhasil dikirim! Terima kasih telah menghubungi kami.
+                        </div>
+
+                        <button type="submit" class="btn btn-custom w-100" id="submitBtn">
                             <i class="fas fa-paper-plane"></i> Kirim Pesan
                         </button>
                     </form>

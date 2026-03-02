@@ -326,6 +326,292 @@ a:hover, a:focus {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
+/* Search & Filter Box */
+.search-filter-box {
+    background: linear-gradient(135deg, #fff 0%, #fff9f5 100%);
+    border: 1px solid rgba(230, 115, 0, 0.1);
+}
+
+.search-filter-box .form-control,
+.search-filter-box .form-select {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.search-filter-box .form-control:focus,
+.search-filter-box .form-select:focus {
+    border-color: var(--primary-orange);
+    box-shadow: 0 0 0 0.2rem rgba(230, 115, 0, 0.15);
+}
+
+.search-filter-box .form-label {
+    font-weight: 600;
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+}
+
+.search-filter-box .btn-outline-secondary {
+    border: 2px solid var(--medium-gray);
+    font-weight: 600;
+}
+
+.search-filter-box .btn-outline-secondary:hover,
+.search-filter-box .btn-outline-secondary:focus {
+    background-color: var(--primary-orange);
+    border-color: var(--primary-orange);
+    color: white;
+}
+
+.no-results-message {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ===================================
+   Rating & Review Styles
+   =================================== */
+
+/* Rating Summary */
+.rating-summary {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.rating-bar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.star-label {
+    width: 60px;
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.rating-count {
+    width: 40px;
+    text-align: right;
+    font-size: 0.875rem;
+    color: var(--medium-gray);
+}
+
+.progress {
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.progress-bar {
+    background: linear-gradient(135deg, var(--primary-orange), #ff8c00);
+    border-radius: 4px;
+    transition: width 0.6s ease;
+}
+
+/* Star Rating Input */
+.star-rating-input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0.25rem;
+}
+
+.star-rating-input input[type="radio"] {
+    display: none;
+}
+
+.star-rating-input label {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+    padding: 0.25rem;
+}
+
+.star-rating-input label i {
+    transition: color 0.2s ease;
+}
+
+.star-rating-input label:hover,
+.star-rating-input label:hover ~ label {
+    color: var(--primary-orange);
+    transform: scale(1.1);
+}
+
+.star-rating-input input[type="radio"]:checked ~ label {
+    color: var(--primary-orange);
+}
+
+.star-rating-input input[type="radio"]:focus + label {
+    outline: 2px solid var(--focus-outline);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Star Rating Display */
+.star-rating-display {
+    font-size: 1.5rem;
+    color: var(--primary-orange);
+}
+
+.star-rating-display i {
+    margin: 0 0.125rem;
+}
+
+/* Review Cards */
+.review-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.review-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.reviewer-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-orange), #ff8c00);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.reviewer-name {
+    font-weight: 600;
+    color: var(--dark-gray);
+    margin-bottom: 0.25rem;
+}
+
+.review-date {
+    font-size: 0.875rem;
+    color: var(--medium-gray);
+}
+
+.review-stars {
+    color: var(--primary-orange);
+    font-size: 1rem;
+}
+
+.review-comment {
+    color: var(--dark-gray);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.review-helpful {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.btn-helpful {
+    background: none;
+    border: 1px solid #dee2e6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    color: var(--medium-gray);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-helpful:hover,
+.btn-helpful.active {
+    background-color: var(--primary-orange);
+    border-color: var(--primary-orange);
+    color: white;
+}
+
+/* Verified Badge */
+.verified-badge {
+    color: #28a745;
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
+}
+
+/* Recipe Info Box */
+.recipe-info-box {
+    background: linear-gradient(135deg, #fff 0%, #fff9f5 100%);
+    border: 1px solid rgba(230, 115, 0, 0.2);
+}
+
+/* Form Validation Styles */
+.form-control.is-valid,
+.form-select.is-valid {
+    border-color: #28a745;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.form-control.is-valid:focus,
+.form-select.is-valid:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+    border-color: #dc3545;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.form-control.is-invalid:focus,
+.form-select.is-invalid:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.invalid-feedback {
+    font-size: 0.875rem;
+    color: #dc3545;
+    margin-top: 0.25rem;
+}
+
+.valid-feedback {
+    font-size: 0.875rem;
+    color: #28a745;
+    margin-top: 0.25rem;
+}
+
+/* Character Counter */
+#messageCounter {
+    font-size: 0.75rem;
+    color: var(--medium-gray);
+}
+
 /* Recipe Cards */
 .recipe-card {
     position: relative;
@@ -796,4 +1082,166 @@ a:hover, a:focus {
 #scrollTopBtn:hover {
     background-color: var(--primary-red);
     transform: translateY(-3px);
+}
+
+/* ===================================
+   Print Styles - Recipe Pages
+   =================================== */
+@media print {
+    /* Hide non-essential elements */
+    .navbar,
+    .footer,
+    #scrollTopBtn,
+    .btn,
+    button,
+    nav,
+    header,
+    footer,
+    .sidebar-card,
+    .no-results-message,
+    .search-filter-box {
+        display: none !important;
+    }
+    
+    /* Reset body styles */
+    body {
+        background: white;
+        padding: 0;
+        margin: 0;
+        font-size: 12pt;
+        line-height: 1.6;
+        color: #000;
+    }
+    
+    /* Main container */
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* Recipe title */
+    .recipe-detail h1 {
+        font-size: 24pt;
+        color: #000;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    
+    /* Recipe image */
+    .recipe-detail img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 1rem 0;
+    }
+    
+    /* Headings */
+    .recipe-detail h3 {
+        font-size: 16pt;
+        color: #000;
+        border-bottom: 2px solid #000;
+        padding-bottom: 0.25rem;
+        margin-top: 1.5rem;
+        page-break-after: avoid;
+    }
+    
+    /* Lists */
+    .recipe-detail ul,
+    .recipe-detail ol {
+        padding-left: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .recipe-detail li {
+        margin-bottom: 0.5rem;
+        page-break-inside: avoid;
+    }
+    
+    /* Remove icons from lists */
+    .recipe-detail ul li::before,
+    .recipe-detail ul li i,
+    .recipe-detail ol li i {
+        display: none;
+    }
+    
+    /* Card styles */
+    .card {
+        border: 1px solid #000;
+        box-shadow: none;
+        break-inside: avoid;
+    }
+    
+    .card-body {
+        padding: 0;
+    }
+    
+    /* Info box */
+    .sidebar-card {
+        border: 1px solid #000;
+        box-shadow: none;
+        padding: 1rem;
+        margin: 1rem 0;
+        break-inside: avoid;
+    }
+    
+    .sidebar-card h4 {
+        font-size: 14pt;
+        color: #000;
+        border-bottom: 1px solid #000;
+        padding-bottom: 0.25rem;
+    }
+    
+    .sidebar-card ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .sidebar-card li {
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Links */
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    
+    a[href]::after {
+        content: "";
+    }
+    
+    /* Page breaks */
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    
+    img {
+        page-break-inside: avoid;
+    }
+    
+    /* Print header */
+    .recipe-detail::before {
+        display: block;
+        content: "Ala Dapoer Adem - Recipe";
+        font-size: 10pt;
+        color: #666;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Print footer with URL */
+    .recipe-detail::after {
+        display: block;
+        content: "Visit: " attr(data-url);
+        font-size: 9pt;
+        color: #666;
+        border-top: 1px solid #ccc;
+        padding-top: 0.5rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
 }

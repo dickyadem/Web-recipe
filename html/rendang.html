@@ -73,19 +73,122 @@
     </nav>
 
     <main id="main-content" class="container my-5">
-        <article class="recipe-detail fade-in" aria-labelledby="recipe-title">
+        <article class="recipe-detail fade-in" aria-labelledby="recipe-title" data-url="https://dickyadem.github.io/Web-recipe/html/rendang.html">
             <div class="text-center mb-4">
                 <a href="../index.html" class="btn btn-outline-secondary mb-3">
                     <i class="fas fa-arrow-left me-1" aria-hidden="true"></i>
                     <span aria-hidden="true">Kembali</span>
                     <span class="sr-only">Kembali ke halaman utama</span>
                 </a>
-                <h1 id="recipe-title">Rendang</h1>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div>
+                        <h1 id="recipe-title" class="d-inline-block">Rendang</h1>
+                        <span class="badge bg-info ms-2" id="viewCounter">
+                            <i class="fas fa-eye me-1" aria-hidden="true"></i>
+                            <span id="viewCount">0</span> views
+                        </span>
+                    </div>
+                    <div class="ms-3">
+                        <div class="btn-group" role="group">
+                            <button onclick="window.print()" class="btn btn-primary" type="button" aria-label="Print this recipe">
+                                <i class="fas fa-print me-2" aria-hidden="true"></i>Print
+                            </button>
+                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" aria-label="More print options">
+                                <span class="sr-only">More options</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#" onclick="window.print(); return false;"><i class="fas fa-print me-2" aria-hidden="true"></i>Print Recipe</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="window.print(); return false;"><i class="fas fa-file-pdf me-2" aria-hidden="true"></i>Save as PDF</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#" onclick="navigator.clipboard.writeText(window.location.href); AlaDapoerAdem.showAlert('Link resep berhasil disalin!', 'success'); return false;"><i class="fas fa-link me-2" aria-hidden="true"></i>Share Link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <img src="../assets/img/rendang.jpg" alt="Rendang daging sapi khas Minang dengan kuah santan kental berwarna coklat gelap" class="img-fluid mb-4">
             </div>
 
             <div class="row">
                 <div class="col-lg-8">
+                    <!-- Recipe Info Box -->
+                    <div class="recipe-info-box mb-4 p-3 bg-light rounded-3">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <i class="fas fa-clock text-primary fa-2x mb-2"></i>
+                                <p class="mb-0"><strong>3-4 jam</strong></p>
+                                <small class="text-muted">Waktu Masak</small>
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-users text-primary fa-2x mb-2"></i>
+                                <p class="mb-0"><strong>4-5</strong></p>
+                                <small class="text-muted">Porsi</small>
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-fire text-primary fa-2x mb-2"></i>
+                                <p class="mb-0"><strong>Sedang</strong></p>
+                                <small class="text-muted">Kesulitan</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rating Summary -->
+                    <div class="rating-summary mb-4 p-4 bg-white rounded-3 shadow-sm">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center border-end">
+                                <h2 class="display-4 fw-bold text-warning mb-0" id="averageRating">4.8</h2>
+                                <div class="star-rating-display mb-2">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                                </div>
+                                <p class="text-muted mb-0">
+                                    <strong id="totalRatings">156</strong> penilaian
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="rating-bars">
+                                    <div class="rating-bar-item">
+                                        <span class="star-label">5 <i class="fas fa-star text-warning"></i></span>
+                                        <div class="progress flex-grow-1 mx-2">
+                                            <div class="progress-bar bg-warning" style="width: 75%"></div>
+                                        </div>
+                                        <span class="rating-count">117</span>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <span class="star-label">4 <i class="fas fa-star text-warning"></i></span>
+                                        <div class="progress flex-grow-1 mx-2">
+                                            <div class="progress-bar bg-warning" style="width: 15%"></div>
+                                        </div>
+                                        <span class="rating-count">23</span>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <span class="star-label">3 <i class="fas fa-star text-warning"></i></span>
+                                        <div class="progress flex-grow-1 mx-2">
+                                            <div class="progress-bar bg-warning" style="width: 5%"></div>
+                                        </div>
+                                        <span class="rating-count">8</span>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <span class="star-label">2 <i class="fas fa-star text-warning"></i></span>
+                                        <div class="progress flex-grow-1 mx-2">
+                                            <div class="progress-bar bg-warning" style="width: 3%"></div>
+                                        </div>
+                                        <span class="rating-count">5</span>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <span class="star-label">1 <i class="fas fa-star text-warning"></i></span>
+                                        <div class="progress flex-grow-1 mx-2">
+                                            <div class="progress-bar bg-warning" style="width: 2%"></div>
+                                        </div>
+                                        <span class="rating-count">3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="card mb-4">
                         <div class="card-body">
                             <h3 id="ingredients-heading"><i class="fas fa-shopping-basket" aria-hidden="true"></i> Bahan-bahan</h3>
@@ -140,6 +243,74 @@
                         </div>
                     </div>
                 </aside>
+            </div>
+
+            <!-- Rating & Reviews Section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <!-- Rating Form -->
+                    <div class="rating-form-section mb-5 p-4 bg-white rounded-3 shadow-sm">
+                        <h3 class="mb-4">
+                            <i class="fas fa-star text-warning me-2" aria-hidden="true"></i>Beri Penilaian
+                        </h3>
+                        <form id="ratingForm" class="mb-4">
+                            <div class="mb-3">
+                                <label class="form-label d-block">
+                                    <i class="fas fa-star text-warning me-1" aria-hidden="true"></i>Rating Anda
+                                </label>
+                                <div class="star-rating-input" role="group" aria-label="Rating bintang">
+                                    <input type="radio" name="rating" id="star5" value="5" class="star-input" />
+                                    <label for="star5" title="5 bintang" aria-label="5 bintang">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </label>
+                                    <input type="radio" name="rating" id="star4" value="4" class="star-input" />
+                                    <label for="star4" title="4 bintang" aria-label="4 bintang">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </label>
+                                    <input type="radio" name="rating" id="star3" value="3" class="star-input" />
+                                    <label for="star3" title="3 bintang" aria-label="3 bintang">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </label>
+                                    <input type="radio" name="rating" id="star2" value="2" class="star-input" />
+                                    <label for="star2" title="2 bintang" aria-label="2 bintang">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </label>
+                                    <input type="radio" name="rating" id="star1" value="1" class="star-input" />
+                                    <label for="star1" title="1 bintang" aria-label="1 bintang">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="reviewerName" class="form-label">Nama Anda</label>
+                                <input type="text" id="reviewerName" class="form-control" placeholder="Masukkan nama Anda" required maxlength="50" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="reviewComment" class="form-label">Komentar / Ulasan</label>
+                                <textarea id="reviewComment" class="form-control" rows="4" placeholder="Bagaimana pengalaman Anda membuat resep ini?" required maxlength="500"></textarea>
+                                <div class="form-text">Maksimal 500 karakter</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>Kirim Ulasan
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Reviews List -->
+                    <div class="reviews-section">
+                        <h3 class="mb-4">
+                            <i class="fas fa-comments me-2" aria-hidden="true"></i>Ulasan Pengunjung
+                            <span class="badge bg-primary ms-2" id="reviewCount">0</span>
+                        </h3>
+                        <div id="reviewsList">
+                            <!-- Reviews will be loaded here dynamically -->
+                        </div>
+                        <div id="noReviews" class="text-center py-4" style="display: none;">
+                            <i class="fas fa-comment-slash fa-3x text-muted mb-3"></i>
+                            <p class="text-muted">Belum ada ulasan. Jadilah yang pertama!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </article>
     </main>
